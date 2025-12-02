@@ -116,7 +116,8 @@ function initTypewriter() {
         'Quantum ML Researcher',
         'Stable Diffusion Fine-tuner',
         'VAE & GAN Enthusiast',
-        'Full-Stack ML Engineer'
+        'Full-Stack Developer',
+        'Machine Learning Engineer'
     ];
     
     let phraseIndex = 0;
