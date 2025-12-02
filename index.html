@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benison Jacob Benny | Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Quantum Background Canvas -->
+    <canvas id="quantum-canvas"></canvas>
+    
+    <!-- Quantum Particles Overlay -->
+    <div id="quantum-particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="quantum-nav">
+        <div class="nav-logo">
+            <span class="quantum-text" data-text="BJB">BJB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="quantum-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="quantum-grid"></div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="quantum-ring"></div>
+                <div class="quantum-ring ring-2"></div>
+                <div class="quantum-ring ring-3"></div>
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Benison Jacob Benny">
+                </div>
+                <div class="quantum-orbitals">
+                    <div class="orbital"></div>
+                    <div class="orbital"></div>
+                    <div class="orbital"></div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <div class="name-container">
+                    <h1 class="hero-name">Benison Jacob Benny</h1>
+                </div>
+                <div class="typewriter-container">
+                    <span class="typewriter-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description quantum-fade">
+                    Transforming complex data into actionable insights through the lens of 
+                    <span class="highlight">machine learning</span> and <span class="highlight">advanced analytics</span>
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="quantum-btn primary">
+                        <span class="btn-text">Get In Touch</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                    <a href="#projects" class="quantum-btn secondary">
+                        <span class="btn-text">View Projects</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2 class="section-title quantum-text" data-text="About Me">About Me</h2>
+            <div class="quantum-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <div class="quantum-card">
+                    <div class="card-glow"></div>
+                    <p>
+                        I am a passionate <strong>Data Scientist</strong> from <strong>Bengaluru, Karnataka</strong>, 
+                        currently pursuing my studies at <strong>CHRIST (Deemed to be University)</strong>. 
+                        My journey in data science is driven by curiosity and the desire to solve complex problems 
+                        using cutting-edge technologies.
+                    </p>
+                    <p>
+                        With expertise in <strong>Generative AI</strong>, <strong>Quantum Machine Learning</strong>, 
+                        and <strong>Deep Learning</strong>, I specialize in building innovative models including 
+                        <strong>Stable Diffusion fine-tuning</strong>, <strong>VAE-based face generation</strong>, 
+                        and <strong>recommendation systems</strong>.
+                    </p>
+                    <p>
+                        I believe in the quantum nature of data – where patterns exist in superposition until 
+                        observed through the right analytical lens. My work spans from classical ML to quantum computing.
+                    </p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item quantum-card">
+                    <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                    <div class="stat-number" data-count="7">0</div>
+                    <div class="stat-label">GitHub Repositories</div>
+                </div>
+                <div class="stat-item quantum-card">
+                    <div class="stat-icon"><i class="fas fa-database"></i></div>
+                    <div class="stat-number" data-count="2">0</div>
+                    <div class="stat-label">HuggingFace Models</div>
+                </div>
+                <div class="stat-item quantum-card">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-number" data-count="27">0</div>
+                    <div class="stat-label">GitHub Stars</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2 class="section-title quantum-text" data-text="Quantum Skills">Quantum Skills</h2>
+            <div class="quantum-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Python">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="R">
+                        <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+                        <span class="skill-name">R</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="SQL">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fas fa-robot"></i> Machine Learning</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="TensorFlow">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <span class="skill-name">TensorFlow</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="PyTorch">
+                        <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                        <span class="skill-name">PyTorch</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Scikit-learn">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <span class="skill-name">Scikit-learn</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Keras">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <span class="skill-name">Keras</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Tableau">
+                        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                        <span class="skill-name">Tableau</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Power BI">
+                        <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+                        <span class="skill-name">Power BI</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Matplotlib">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <span class="skill-name">Matplotlib</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Plotly">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <span class="skill-name">Plotly</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fas fa-cloud"></i> Cloud & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Flask">
+                        <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="PostgreSQL">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Git">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Gradio">
+                        <div class="skill-icon"><i class="fas fa-window-maximize"></i></div>
+                        <span class="skill-name">Gradio</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fas fa-atom"></i> Quantum & Generative AI</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Qiskit">
+                        <div class="skill-icon"><i class="fas fa-atom"></i></div>
+                        <span class="skill-name">Qiskit</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Stable Diffusion">
+                        <div class="skill-icon"><i class="fas fa-image"></i></div>
+                        <span class="skill-name">Stable Diffusion</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="VAE">
+                        <div class="skill-icon"><i class="fas fa-random"></i></div>
+                        <span class="skill-name">VAE/GAN</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="HuggingFace">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <span class="skill-name">HuggingFace</span>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <h2 class="section-title quantum-text" data-text="Education & Learning">Education & Learning</h2>
+            <div class="quantum-line"></div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+            <div class="timeline-item" data-aos="quantum-fade-right">
+                <div class="timeline-marker">
+                    <div class="quantum-pulse"></div>
+                </div>
+                <div class="timeline-content quantum-card">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">MSc Data Science</h3>
+                    <h4 class="timeline-company">CHRIST (Deemed to be University), Bengaluru</h4>
+                    <ul class="timeline-description">
+                        <li>Specialized in Machine Learning and Deep Learning</li>
+                        <li>Research focus on Quantum Machine Learning with Qiskit</li>
+                        <li>Developed multiple ML projects including recommendation systems</li>
+                        <li>Published models on HuggingFace for Generative AI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="quantum-fade-left">
+                <div class="timeline-marker">
+                    <div class="quantum-pulse"></div>
+                </div>
+                <div class="timeline-content quantum-card">
+                    <div class="timeline-date">Ongoing</div>
+                    <h3 class="timeline-title">Quantum Machine Learning Research</h3>
+                    <h4 class="timeline-company">Self-Directed Learning</h4>
+                    <ul class="timeline-description">
+                        <li>Implemented Deutsch-Jozsa Algorithm using Qiskit</li>
+                        <li>Developed Quantum PCA simulations</li>
+                        <li>Exploring quantum computing applications in ML</li>
+                        <li>Building quantum circuits for machine learning tasks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="quantum-fade-right">
+                <div class="timeline-marker">
+                    <div class="quantum-pulse"></div>
+                </div>
+                <div class="timeline-content quantum-card">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <h3 class="timeline-title">Generative AI Specialist</h3>
+                    <h4 class="timeline-company">Independent Projects</h4>
+                    <ul class="timeline-description">
+                        <li>Fine-tuned Stable Diffusion on Zappos50K Shoe Dataset</li>
+                        <li>Built VAE-based face generation system</li>
+                        <li>Deployed models on HuggingFace Spaces</li>
+                        <li>Created Gradio-based web interfaces for AI models</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 class="section-title quantum-text" data-text="Featured Projects">Featured Projects</h2>
+            <div class="quantum-line"></div>
+        </div>
+        <div class="projects-grid">
+            <a href="https://github.com/Benisonjac/Shoe_Generator_Hosting" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                            <span class="project-link"><i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Shoe Generator - Stable Diffusion</h3>
+                    <p class="project-description">
+                        Finetuned Stable Diffusion v1.5 with LoRA on Zappos50K Shoe Dataset for generating realistic shoe images from text descriptions
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Stable Diffusion</span>
+                        <span class="tag">LoRA</span>
+                        <span class="tag">Gradio</span>
+                        <span class="tag">HuggingFace</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/Benisonjac/Face_Generation" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                            <span class="project-link"><i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">VAE Face Generator</h3>
+                    <p class="project-description">
+                        TensorFlow Variational Autoencoder for generating realistic synthetic human face images with Gradio web UI
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">VAE</span>
+                        <span class="tag">Gradio</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/Benisonjac/GameRecommendation" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">PlayNext - Game Recommendation</h3>
+                    <p class="project-description">
+                        Personalized game recommendation system using Flask, MySQL, and ML with content-based filtering. ⭐ 11 Stars
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">KNN</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/Benisonjac/MultiFile_Updation_on_Postgres" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Management Flask API</h3>
+                    <p class="project-description">
+                        Flask-based API for uploading, processing Excel/CSV data into PostgreSQL/MySQL with smart data sanitization
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/Benisonjac/Quantum_ML" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Quantum Machine Learning</h3>
+                    <p class="project-description">
+                        Implementation of Quantum PCA and Deutsch-Jozsa Algorithm using Qiskit for quantum computing experiments
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Qiskit</span>
+                        <span class="tag">Quantum ML</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/Benisonjac/seo-content-detector" target="_blank" class="project-card-link">
+            <div class="project-card quantum-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-placeholder">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">SEO Content Quality Detector</h3>
+                    <p class="project-description">
+                        ML-powered content analysis for SEO quality assessment with duplicate detection using TF-IDF and Random Forest
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">TF-IDF</span>
+                        <span class="tag">BeautifulSoup</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title quantum-text" data-text="Get In Touch">Get In Touch</h2>
+            <div class="quantum-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item quantum-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/benison-jacob-benny" target="_blank" style="color: var(--quantum-primary);">linkedin.com/in/benison-jacob-benny</a>
+                    </div>
+                </div>
+                <div class="contact-item quantum-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/Benisonjac" target="_blank" style="color: var(--quantum-primary);">github.com/Benisonjac</a>
+                    </div>
+                </div>
+                <div class="contact-item quantum-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>HuggingFace</h4>
+                        <a href="https://huggingface.co/benisonjac" target="_blank" style="color: var(--quantum-primary);">huggingface.co/benisonjac</a>
+                    </div>
+                </div>
+                <div class="contact-item quantum-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Bengaluru, Karnataka, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form quantum-card">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="quantum-btn primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="quantum-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="quantum-text" data-text="BJB">BJB</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/benison-jacob-benny" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Benisonjac" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://huggingface.co/benisonjac" target="_blank" class="social-link"><i class="fas fa-robot"></i></a>
+            </div>
+            <p class="footer-text">
+                © 2025 Benison Jacob Benny. Built with <span class="heart">❤</span> and Quantum Energy
+            </p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <script src="quantum.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme === 'dark' ? 'dark' : '');
+            localStorage.setItem('theme', newTheme);
+            
+            // Update quantum canvas colors
+            if (window.quantumCanvas) {
+                window.quantumCanvas.updateTheme(newTheme);
+            }
+        });
+    </script>
+</body>
+</html>
