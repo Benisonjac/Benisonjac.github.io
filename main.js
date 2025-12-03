@@ -278,23 +278,56 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
     
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const submitBtn = form.querySelector('.quantum-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
             
             // Create quantum effect on submit
             createQuantumSubmitEffect();
             
-            // Here you would typically send the data to a server
-            // For now, we'll show a success message
-            setTimeout(() => {
-                alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
-                form.reset();
-            }, 1000);
+            // Disable button and show sending state
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                if (btnText) btnText.textContent = 'Sending...';
+            }
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Success - show message and reset form
+                    if (btnText) btnText.textContent = 'Message Sent!';
+                    submitBtn.style.background = '#22c55e';
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        if (btnText) btnText.textContent = 'Send Message';
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                    }, 3000);
+                } else {
+                    throw new Error('Failed to send');
+                }
+            } catch (error) {
+                // Error - show error message
+                if (btnText) btnText.textContent = 'Failed to Send';
+                submitBtn.style.background = '#ef4444';
+                
+                setTimeout(() => {
+                    if (btnText) btnText.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                }, 3000);
+            }
         });
     }
 }

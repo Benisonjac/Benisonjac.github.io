@@ -78,12 +78,6 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll to Explore</span>
-        </div>
     </section>
 
     <!-- About Section -->
@@ -602,28 +596,45 @@
                 </div>
             </div>
             <div class="contact-form quantum-card">
-                <form id="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/mjknrdpl" method="POST">
+                    <!-- Honeypot field to catch bots -->
+                    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+                    
                     <div class="form-group">
-                        <input type="text" id="name" required>
+                        <input type="text" name="name" id="name" required minlength="2">
                         <label for="name">Your Name</label>
                         <div class="form-line"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" required>
+                        <input type="email" name="email" id="email" required>
                         <label for="email">Your Email</label>
                         <div class="form-line"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" required>
+                        <select name="purpose" id="purpose" required>
+                            <option value="" disabled selected>Select your purpose...</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="collaboration">Project Collaboration</option>
+                            <option value="freelance">Freelance Work</option>
+                            <option value="question">Technical Question</option>
+                            <option value="networking">Professional Networking</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="purpose" class="select-label">Purpose of Contact</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" required>
                         <label for="subject">Subject</label>
                         <div class="form-line"></div>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" rows="4" required></textarea>
+                        <textarea name="message" id="message" rows="4" required minlength="20"></textarea>
                         <label for="message">Message</label>
                         <div class="form-line"></div>
                     </div>
-                    <button type="submit" class="quantum-btn primary">
+                    <button type="submit" class="quantum-btn primary" id="submit-btn">
                         <span class="btn-text">Send Message</span>
                         <span class="btn-glow"></span>
                     </button>
